@@ -209,12 +209,9 @@ LIBADDON_DIRS=\
 	lib/addons/library.xbmc.pvr \
 	lib/addons/library.xbmc.gui \
 
-CONFLUENCE_MEDIA=addons/skin.confluence/media
-SKIN_DIRS=$(CONFLUENCE_MEDIA)
-
 ifeq (@USE_SKIN_TOUCHED@,1)
 TOUCHED_MEDIA=addons/skin.touched/media
-SKIN_DIRS+=$(TOUCHED_MEDIA)
+SKIN_DIRS=$(TOUCHED_MEDIA)
 endif
 
 DIRS= $(BIN_DIRS) $(EC_DIRS) $(XBMCTEX_DIRS) $(DVDPCODECS_DIRS) $(PAPCODECS_DIRS) \
@@ -282,10 +279,7 @@ config.status: configure
 # skin textures
 ifeq (@USE_TEXTUREPACKER@,1)
 skins: tools/TexturePacker/TexturePacker force
-	 $(MAKE) -C $(CONFLUENCE_MEDIA)
-ifeq (@USE_SKIN_TOUCHED@,1)
 	 $(MAKE) -C $(TOUCHED_MEDIA)
-endif
 else
 skins:
 endif

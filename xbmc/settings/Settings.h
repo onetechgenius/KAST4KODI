@@ -27,7 +27,7 @@
 #include "system.h" //for HAS_SKIN_TOUCHED
 #endif
 
-#if defined(HAS_SKIN_TOUCHED) && defined(TARGET_DARWIN_IOS) && !defined(TARGET_DARWIN_IOS_ATV2)
+#if defined(HAS_SKIN_TOUCHED) && (defined(TARGET_ANDROID) || (defined(TARGET_DARWIN_IOS) && !defined(TARGET_DARWIN_IOS_ATV2)))
 #define DEFAULT_SKIN          "skin.touched"
 #else
 #define DEFAULT_SKIN          "skin.confluence"
