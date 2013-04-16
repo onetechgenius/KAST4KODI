@@ -18,7 +18,7 @@ cd tools/android/depends
 ./configure \
         --with-ndk=${TOOLS_PREFIX}/android-ndk-r7-crystax-5.beta3 \
         --with-sdk=${TOOLS_PREFIX}/android-sdk-linux \
-        --with-toolchain=${TOOLS_PREFIX}/android-sdk-linux/android-9-frodo-xaf-touch \
+        --with-toolchain=${TOOLS_PREFIX}/android-sdk-linux/android-9-frodo-xaf-set_top \
         --with-tarballs=${TOOLS_PREFIX}/tarballs \
         --with-sdk-platform=android-9 || exit 1
 
