@@ -28,7 +28,7 @@ NATIVEPREFIX=$(XBMCPREFIX)/$(NATIVEPLATFORM)
 
 PLATFORM_FLAGS=-DANDROID -Os
 ifeq ($(PLATFORM),armeabi-v7a)
-  PLATFORM_FLAGS+=-march=armv7-a -mtune=cortex-a9 -mfloat-abi=softfp -mfpu=neon -D__ARM_ARCH_7__ -D__ARM_ARCH_7A__
+  PLATFORM_FLAGS+=-march=armv7-a -mtune=cortex-a9 -mfloat-abi=softfp -mfpu=vfpv3-d16 -D__ARM_ARCH_7__ -D__ARM_ARCH_7A__
 endif
 
 ifeq ($(PLATFORM),x86)

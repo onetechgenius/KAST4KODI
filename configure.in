@@ -771,9 +771,9 @@ elif test "$use_arch" = "arm"; then
         use_cpu=cortex-a8])
   else
     if test "$use_neon" = "yes"; then 
-      CFLAGS="$CFLAGS -mfpu=neon -mvectorize-with-neon-quad"
-      CXXFLAGS="$CXXFLAGS -mfpu=neon -mvectorize-with-neon-quad"
-      FFMPEG_EXTRACFLAGS="$FFMPEG_EXTRACFLAGS -mfpu=neon"
+      CFLAGS="$CFLAGS -mfpu=vfpv3-d16"
+      CXXFLAGS="$CXXFLAGS -mfpu=vfpv3-d16"
+      FFMPEG_EXTRACFLAGS="$FFMPEG_EXTRACFLAGS -mfpu=vfpv3-d16"
     fi
   fi
 fi
@@ -2500,9 +2500,9 @@ XB_CONFIG_MODULE([lib/ffmpeg], [
       ffmpg_config="$ffmpg_config --enable-pic"
       ffmpg_config="$ffmpg_config --disable-armv5te --disable-armv6t2"
       if test "$use_neon"  = "yes"; then
-        ffmpg_config="$ffmpg_config --enable-neon"
+        ffmpg_config="$ffmpg_config --enable-armvfp"
       else
-        ffmpg_config="$ffmpg_config --disable-neon"
+        ffmpg_config="$ffmpg_config --enable-armvfp"
       fi
     else
       ffmpg_config="$ffmpg_config --disable-amd3dnow"
@@ -2559,7 +2559,7 @@ XB_CONFIG_MODULE([lib/ffmpeg], [
       `if test "$cross_compiling" = "yes"; then echo --enable-cross-compile; fi` \
       `if test "$use_arch" != "no"; then echo --arch=$use_arch; fi`\
       `if test "$use_cpu" != "no"; then echo --cpu=$use_cpu; fi`\
-      `if test "$use_neon" = "yes"; then echo --enable-neon; else echo --disable-neon; fi`\
+      `if test "$use_neon" = "yes"; then echo --enable-armvfp; else echo --enable-armvfp; fi`\
       --target-os=$ffmpeg_target_os \
       --disable-muxers \
       --enable-muxer=spdif \

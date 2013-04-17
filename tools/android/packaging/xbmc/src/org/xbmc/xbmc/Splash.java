@@ -224,6 +224,9 @@ public class Splash extends Activity {
 	}
 
 	private boolean CheckCpuFeature(String feat) {
+    if ("neon".equals(feat)) {
+            return true;
+    }
 		final Pattern FeaturePattern = Pattern.compile(":.*?\\s" + feat
 				+ "(?:\\s|$)");
 		Matcher m = FeaturePattern.matcher(mCpuinfo);
