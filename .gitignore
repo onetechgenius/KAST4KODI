@@ -1,3 +1,12 @@
+# Exclude repos -- generated from dl_repos.sh
+addons/repository.Jas0npc/
+addons/repository.bstrdsmkr/
+addons/repository.eldorado/
+addons/repository.googlecode.anarchintosh-projects/
+addons/repository.mash2k3/
+addons/repository.nuskunetworks/
+addons/repository.xbmchub/
+
 # global patterns
 testMain
 
