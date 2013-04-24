@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+BUILD_DIR=$1
+cd $BUILD_DIR
+
 ########
 # Prep current set of repo's for inclusion in XBMC builds
 ########
