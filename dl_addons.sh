@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+BUILD_DIR=$1
+cd $BUILD_DIR
+
 #######
 # Download addons for inclusion in XAF release
 #######
