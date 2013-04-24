@@ -7,6 +7,31 @@ addons/repository.mash2k3/
 addons/repository.nuskunetworks/
 addons/repository.xbmchub/
 
+# Exclude addons -- generated from dl_addons.sh
+addons/plugin.program.nnandroidapps/
+addons/plugin.program.nnandroidsettings/
+addons/plugin.video.1channel/
+addons/plugin.video.AwsomeDL/
+addons/plugin.video.discovery/
+addons/plugin.video.hubmaintenance/
+addons/plugin.video.icefilms/
+addons/plugin.video.movie25/
+addons/plugin.video.projectfreetv/
+addons/plugin.video.ravens/
+addons/plugin.video.tv-release/
+addons/plugin.video.watchfreeseries/
+addons/plugin.video.youtube/
+addons/script.common.plugin.cache/
+addons/script.module.beautifulsoup/
+addons/script.module.elementtree/
+addons/script.module.metahandler/
+addons/script.module.myconnpy/
+addons/script.module.parsedom/
+addons/script.module.simple.downloader/
+addons/script.module.t0mm0.common/
+addons/script.module.urlresolver/
+addons/script.xbmc.debug.log/
+
 # global patterns
 testMain
 
