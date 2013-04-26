@@ -108,15 +108,15 @@ cd ..
 
 # Mash Up -- All Addons - Mash Up Repo
 cd addons/
-wget https://github.com/mash2k3/mash2k3-repository/raw/master/zips/plugin.video.watchfreeseries/plugin.video.watchfreeseries-1.0.6.zip
+#wget https://github.com/mash2k3/mash2k3-repository/raw/master/zips/plugin.video.watchfreeseries/plugin.video.watchfreeseries-1.0.6.zip
 wget https://github.com/mash2k3/mash2k3-repository/raw/master/zips/plugin.video.ravens/plugin.video.ravens-1.0.1.zip
 wget https://github.com/mash2k3/mash2k3-repository/raw/master/zips/plugin.video.movie25/plugin.video.movie25-1.2.9.zip
 wget https://github.com/mash2k3/mash2k3-repository/raw/master/zips/plugin.video.discovery/plugin.video.discovery-1.0.0.zip
-unzip plugin.video.watchfreeseries-1.0.6.zip
+#unzip plugin.video.watchfreeseries-1.0.6.zip
 unzip plugin.video.ravens-1.0.1.zip
 unzip plugin.video.movie25-1.2.9.zip
 unzip plugin.video.discovery-1.0.0.zip
-rm plugin.video.watchfreeseries-1.0.6.zip
+#rm plugin.video.watchfreeseries-1.0.6.zip
 rm plugin.video.ravens-1.0.1.zip
 rm plugin.video.movie25-1.2.9.zip
 rm plugin.video.discovery-1.0.0.zip
