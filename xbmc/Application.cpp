@@ -614,6 +614,7 @@ bool CApplication::Create()
   CopyUserDataIfNeeded("special://masterprofile/", "LCD.xml");
   CopyUserDataIfNeeded("special://masterprofile/", "playercorefactory.xml");
   CopyUserDataIfNeeded("special://masterprofile/", "sources.xml");
+  CopyUserDataIfNeeded("special://masterprofile/", "guisettings.xml");
 
   if (!CLog::Init(CSpecialProtocol::TranslatePath(g_settings.m_logFolder).c_str()))
   {
