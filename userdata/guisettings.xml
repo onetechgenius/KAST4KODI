@@ -1,0 +1,40 @@
+<settings>
+    <general>
+        <addonautoupdate>true</addonautoupdate>
+        <addonnotifications>true</addonnotifications>
+    </general>
+    <input>
+        <enablemouse>true</enablemouse>
+        <remoteaskeyboard>true</remoteaskeyboard>
+    </input>
+    <lookandfeel>
+        <enablerssfeeds>true</enablerssfeeds>
+        <font>Default</font>
+    </lookandfeel>
+    <services>
+        <airplay>true</airplay>
+        <airplaypassword></airplaypassword>
+        <devicename>XAF Community Build</devicename>
+    </services>
+    <weather>
+        <addon>weather.wunderground</addon>
+        <addonsettings></addonsettings>
+        <currentlocation>1</currentlocation>
+    </weather>
+    <skinsettings>
+        <setting type="bool" name="skin.confluence.FirstTimeRun">true</setting>
+        <setting type="bool" name="skin.confluence.HideBackGroundFanart">true</setting>
+        <setting type="bool" name="skin.confluence.ShowBackgroundVideo">true</setting>
+        <setting type="bool" name="skin.confluence.ShowBackgroundVis">false</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton1">plugin.video.1channel</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton2">plugin.video.projectfreetv</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton3">plugin.video.icefilms</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton4">plugin.video.movie25</setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton5">plugin.video.tv-release</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton1">plugin.program.nnandroidapps</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton2">plugin.video.hubmaintenance</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton3">plugin.program.nnandroidsettings</setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton4">script.xbmc.debug.log</setting>
+    </skinsettings>
+</settings>
+
