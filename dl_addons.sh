@@ -19,9 +19,9 @@ cd ..
 
 # script.module.t0mm0.common
 cd addons/
-wget http://mirrors.xbmc.org/addons/frodo/script.module.t0mm0.common/script.module.t0mm0.common-1.1.0.zip
-unzip script.module.t0mm0.common-1.1.0.zip
-rm script.module.t0mm0.common-1.1.0.zip
+wget http://mirrors.xbmc.org/addons/frodo/script.module.t0mm0.common/script.module.t0mm0.common-2.1.0.zip
+unzip script.module.t0mm0.common-2.1.0.zip
+rm script.module.t0mm0.common-2.1.0.zip
 cd ..
 
 # script.module.metahandler
