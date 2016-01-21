@@ -1,32 +1,11 @@
 <!--
 	Credits
-	KemoNine (xbmcandroid.com/forums)
-	Staticadk (xbmcandroid.com/forums)
-	GSH (xbmcandroid.com/forums)
+	OneTechGenius(onetechgenius.com/cast)
+
 -->
 
 <playercorefactory>
 	<players>
-		<!-- Cast2TV-PRO definition -->
-		<player name="Cast2TV-PRO" type="ExternalPlayer" audio="true" video="true">
-			<!-- Android intent -->
-			<filename>com.ytweb</filename>
-			<!-- Hide XBMC -->
-			<hidexbmc>true</hidexbmc>
-			<!-- After 2 minutes bump the play count of the item in XBMC -->
-			<playcountminimumtime>120</playcountminimumtime>
-		</player>
-		
-		<!-- Cast2TV-LITE definition -->
-		<player name="Cast2TV-Lite" type="ExternalPlayer" audio="true" video="true">
-			<!-- Android intent -->
-			<filename>com.ytweblite</filename>
-			<!-- Hide XBMC -->
-			<hidexbmc>true</hidexbmc>
-			<!-- After 2 minutes bump the play count of the item in XBMC -->
-			<playcountminimumtime>120</playcountminimumtime>
-		</player>
-		
 		<!-- MXPlayer Free definition -->
 		<player name="MX Playerfree" type="ExternalPlayer" audio="false" video="true">
 			<!-- Android intent -->
@@ -47,6 +26,16 @@
 			<playcountminimumtime>120</playcountminimumtime>
 		</player>
 
+		<!-- Plex definition -->
+		<player name="Plex" type="ExternalPlayer" audio="false" video="true">
+			<!-- Android intent -->
+			<filename>com.plexapp.android</filename>
+			<!-- Hide XBMC -->
+			<hidexbmc>true</hidexbmc>
+			<!-- After 2 minutes bump the play count of the item in XBMC -->
+			<playcountminimumtime>120</playcountminimumtime>
+		</player>
+
 		<!-- Avia definition -->
 		<player name="Avia" type="ExternalPlayer" audio="false" video="true">
 			<!-- Android intent -->
@@ -57,10 +46,10 @@
 			<playcountminimumtime>120</playcountminimumtime>
 		</player>
 
-		<!-- VLC Player definition -->
-		<player name="VLC" type="ExternalPlayer" audio="false" video="true">
+		<!-- Chrome Beta definition -->
+		<player name="Chrome" type="ExternalPlayer" audio="false" video="true">
 			<!-- Android intent -->
-			<filename>org.videolan.vlc</filename>
+			<filename>com.chrome.beta</filename>
 			<!-- Hide XBMC -->
 			<hidexbmc>true</hidexbmc>
 			<!-- After 2 minutes bump the play count of the item in XBMC -->
@@ -77,10 +66,10 @@
 			<playcountminimumtime>120</playcountminimumtime>
 		</player>
 
-		<!-- RockPlayer Lite definition -->
-		<player name="RockPlayerLite" type="ExternalPlayer" audio="false" video="true">
+		<!-- EZCast definition -->
+		<player name="EZCast" type="ExternalPlayer" audio="false" video="true">
 			<!-- Android intent -->
-			<filename>com.redirectin.rockplayer.android.unified.lite</filename>
+			<filename>com.actionsmicro.ezcast</filename>
 			<!-- Hide XBMC -->
 			<hidexbmc>true</hidexbmc>
 			<!-- After 2 minutes bump the play count of the item in XBMC -->
@@ -97,20 +86,20 @@
 			<playcountminimumtime>120</playcountminimumtime>
 		</player>
 
-		<!-- Gallery definition -->
-		<player name="Gallery" type="ExternalPlayer" audio="false" video="true">
+		<!-- AllConnect - Play & Stream definition -->
+		<player name="AllConnect" type="ExternalPlayer" audio="false" video="true">
 			<!-- Android intent -->
-			<filename>com.android.gallery3d</filename>
+			<filename>com.tuxera.streambels</filename>
 			<!-- Hide XBMC -->
 			<hidexbmc>true</hidexbmc>
 			<!-- After 2 minutes bump the play count of the item in XBMC -->
 			<playcountminimumtime>120</playcountminimumtime>
 		</player>
 
-		<!-- Vget definition -->
-		<player name="Vget" type="ExternalPlayer" audio="false" video="true">
+		<!-- iMediaShare definition -->
+		<player name="iMediaShare" type="ExternalPlayer" audio="false" video="true">
 			<!-- Android intent -->
-			<filename>mb.videoget</filename>
+			<filename>com.bianor.amspersonal</filename>
 			<!-- Hide XBMC -->
 			<hidexbmc>true</hidexbmc>
 			<!-- After 2 minutes bump the play count of the item in XBMC -->
@@ -125,22 +114,115 @@
 			<hidexbmc>true</hidexbmc>
 			<!-- After 2 minutes bump the play count of the item in XBMC -->
 			<playcountminimumtime>120</playcountminimumtime>
+		</player>		
+
+		<!-- Vplayer definition -->
+		<player name="Vplayer" type="ExternalPlayer" audio="false" video="true">
+			<!-- Android intent -->
+			<filename>me.abitno.vplayer.t</filename>
+			<!-- Hide XBMC -->
+			<hidexbmc>true</hidexbmc>
+			<!-- After 2 minutes bump the play count of the item in XBMC -->
+			<playcountminimumtime>120</playcountminimumtime>
 		</player>
+
+		<!-- Vbukit Chromecast definition -->
+		<player name="Vbukit Chromecast" type="ExternalPlayer" audio="false" video="true">
+			<!-- Android intent -->
+			<filename>com.creatingrevolutions.vbukitchromecast</filename>
+			<!-- Hide XBMC -->
+			<hidexbmc>true</hidexbmc>
+			<!-- After 2 minutes bump the play count of the item in XBMC -->
+			<playcountminimumtime>120</playcountminimumtime>
+	    </player>
+
+     	 <!-- Vbukit definition -->
+		<player name="Vbukit" type="ExternalPlayer" audio="false" video="true">
+			<!-- Android intent -->
+			<filename>com.creatingrevolutions.virtualbucket</filename>
+			<!-- Hide XBMC -->
+			<hidexbmc>true</hidexbmc>
+			<!-- After 2 minutes bump the play count of the item in XBMC -->
+			<playcountminimumtime>120</playcountminimumtime>
+	    </player>
+
+	    <!-- Cast2TV Pro definition -->
+		<player name="Cast2TV" type="ExternalPlayer" audio="false" video="true">
+			<!-- Android intent -->
+			<filename>com.ytweb</filename>
+			<!-- Hide XBMC -->
+			<hidexbmc>true</hidexbmc>
+			<!-- After 2 minutes bump the play count of the item in XBMC -->
+			<playcountminimumtime>120</playcountminimumtime>
+	    </player>
+
+		<!-- Cast2TV Lite definition -->
+		<player name="Cast2TVLite" type="ExternalPlayer" audio="false" video="true">
+			<!-- Android intent -->
+			<filename>com.ytweblite</filename>
+			<!-- Hide XBMC -->
+			<hidexbmc>true</hidexbmc>
+			<!-- After 2 minutes bump the play count of the item in XBMC -->
+			<playcountminimumtime>120</playcountminimumtime>
+		</player>
+		
+		<!-- FlashCast definition -->
+		<player name="FlashCast" type="ExternalPlayer" audio="false" video="true">
+			<!-- Android intent -->
+			<filename>flashcast.com.flashcast</filename>
+			<!-- Hide XBMC -->
+			<hidexbmc>true</hidexbmc>
+			<!-- After 2 minutes bump the play count of the item in XBMC -->
+			<playcountminimumtime>120</playcountminimumtime>
+		</player>
+		
+		<!-- ES File Explorer definition -->
+		<player name="ES File Explorer" type="ExternalPlayer" audio="false" video="true">
+			<!-- Android intent -->
+			<filename>com.estrongs.android.pop</filename>
+			<!-- Hide XBMC -->
+			<hidexbmc>true</hidexbmc>
+			<!-- After 2 minutes bump the play count of the item in XBMC -->
+			<playcountminimumtime>120</playcountminimumtime>
+		</player>
+		
+		<!-- Yatse definition -->
+		<player name="Yatse" type="ExternalPlayer" audio="false" video="true">
+			<!-- Android intent -->
+			<filename>org.leetzone.android.yatsewidgetfree</filename>
+			<!-- Hide XBMC -->
+			<hidexbmc>true</hidexbmc>
+			<!-- After 2 minutes bump the play count of the item in XBMC -->
+			<playcountminimumtime>120</playcountminimumtime>
+		</player>
+		
+		<!-- Video & TV Cast definition -->
+		<player name="VideoCast" type="ExternalPlayer" audio="false" video="true">
+			<!-- Android intent -->
+			<filename>de.twokit.castbrowser</filename>
+			<!-- Hide XBMC -->
+			<hidexbmc>true</hidexbmc>
+			<!-- After 2 minutes bump the play count of the item in XBMC -->
+			<playcountminimumtime>120</playcountminimumtime>
+		</player>
+		
+		<!-- Castbox definition -->
+		<player name="Castbox" type="ExternalPlayer" audio="false" video="true">
+			<!-- Android intent -->
+			<filename>com.liquidum.castbox</filename>
+			<!-- Hide XBMC -->
+			<hidexbmc>true</hidexbmc>
+			<!-- After 2 minutes bump the play count of the item in XBMC -->
+			<playcountminimumtime>120</playcountminimumtime>
+		</player>
+	</players>
 	
 	<!-- Rules for which external player to use -->
-	<!-- Cast2TV-PRO Pro is default
+	<!-- MX Player Pro is default
 	         change player= value to one of the above names to change this -->
-	<rules action="prepend">		
-		<!-- rtmp Streams -->
-		<rule protocols="rtmp" player="Cast2TV-Lite"/>
-		<rule protocols="http" player="Cast2TV-Lite"/>
-		<rule protocols="https" player="Cast2TV-Lite"/>
-		<rule protocols="rtmpe" player="Cast2TV-Lite"/>
-      
-		<!-- rtsp Streams -->
-		<rule protocols="rtsp" player="Cast2TV-Lite" />
+	<rules action="prepend">
 		
-		<!-- Video files -- Default rule (last to ensure above trigger first makes Cast2TV-PRO default for all playback -->
-		<rule video="true" player="Cast2TV-Lite"/>
+		<!-- Video files -- Default rule (last to ensure above trigger first -->
+		<rule video="true" player="MXPlayer Free"/>
 	</rules>
 </playercorefactory>
